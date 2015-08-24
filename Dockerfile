@@ -10,4 +10,4 @@ RUN mkdir -p /var/log/supervisor
 ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 CMD ["/usr/bin/supervisord", "-n"]
 
-EXPOSE 8089 1936
+EXPOSE 8089 1936 7777
