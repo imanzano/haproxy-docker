@@ -1,7 +1,7 @@
 FROM       ubuntu
 RUN apt-get update && apt-get install -y procps
 RUN apt-get install -y vim
-RUN apt-get install -y net-tools haproxy supervisor socat
+RUN apt-get install -y net-tools haproxy supervisor socat telnet
 COPY haproxy.cfg /etc/haproxy/haproxy.cfg
 COPY haproxy-remote.conf /etc/default/haproxy-remote.conf 
 COPY haproxy-remote /etc/init.d/haproxy-remote
